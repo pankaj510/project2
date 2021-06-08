@@ -47,7 +47,7 @@ Polarity & subjectivity were plotted, for a visual representation of Sentiment A
 
 Piecharts and bargraphs were plotted as an adjunct visual representation representing positive, neutral and negative tweets.
 
-![piechart.png](images/piechart.png)
+![piechart.png](images/piechart.png)  
 
 ![bargraph.png](images/bargraph.png)
 
