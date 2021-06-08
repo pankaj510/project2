@@ -28,18 +28,24 @@ Sentiment scores and raw text files were appended.
 
 Twitter Sentiment and Bitcoin price were overlayed.
 Upon analysis, using a range of sentiment values as entry and exit points leads to very profitable signal generation.
+
 ![BTC_sentiment.png](images/BTC_sentiment.png)
 
 Text from 5000 tweets were tokenized, lemmatized, cleaned and processed.
 A wordcloud and top 20 word bar chart were created.
+
 ![BTC_WC_50days.png](images/BTC_WC_50days.png)
+
 ![20_top_words.png](images/20_top_words.png)
 
 Polarity & subjectivity were plotted, for a visual representation of Sentiment Analysis.
+
 ![sentiment_analysis.png](images/sentiment_analysis.png)
 
 Piecharts and bargraphs were plotted as an adjunct visual representation representing positive, neutral and negative tweets.
+
 ![piechart.png](images/piechart.png)
+
 ![bargraph.png](images/bargraph.png)
 
 Algotrading was attempted.
