@@ -10,6 +10,7 @@ The premise of 'Will it survive?' has been replaced with 'To what extent can Bit
 Retail investors & Institutions have entered.  
 Local governments are coming in with Miami looking at investing some of city's treasury reserves in Bitcoin. (1)  
 Who will be the next? Which nation states will be first?  
+El Savador looks to be ahead in that race, with President Nayib Bukele planning to introduce legislation making it the world's first sovereign state to adop Bitcoin as legal tender. (2)
 Like it or not, Bitcoin and cryptocurrencies are here to stay.  
 What better way to get on the Bitcoin bandwagon, than to learn to potentially time one's entry.  
 We aim to come up with a guide on potential entry and exits for Bitcoin based on Twitter sentiment.
@@ -18,9 +19,9 @@ We aim to come up with a guide on potential entry and exits for Bitcoin based on
 Twitter sentiment has a high correlation with Bitcoin prices, potentially guiding entry and exit points.
 
 # Data Collection
-Twitter full archive search API (2) & 'Tweepy' python package (3) was used.  
+Twitter full archive search API (3) & 'Tweepy' python package (4) was used.  
 We collated the first 100 tweets per day, for 50 days, mentioning the term 'Bitcoin'.  
-Yahoo Finance API was used for historial Bitcoin prices. (4)
+Yahoo Finance API was used for historial Bitcoin prices. (5)
 
 # Analysis
 TextBlob was a new library package we used to obtain subjectivity, polarity & sentiment.  
@@ -81,6 +82,7 @@ Using specific Twitter sentiment values as a guideline, signals for going long o
 
 # Links
 1. https://news.bitcoin.com/mayor-miami-treasury-reserves-bitcoin/
-2. https://developer.twitter.com/en/dashboard
-3. https://docs.tweepy.org/en/latest/index.html
-4. https://pypi.org/project/yfinance/
+2. https://www.cnbc.com/amp/2021/06/05/el-salvador-becomes-the-first-country-to-adopt-bitcoin-as-legal-tender-.html
+3. https://developer.twitter.com/en/dashboard
+4. https://docs.tweepy.org/en/latest/index.html
+5. https://pypi.org/project/yfinance/
