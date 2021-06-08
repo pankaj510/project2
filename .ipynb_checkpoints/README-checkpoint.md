@@ -35,6 +35,8 @@ Upon analysis, using a range of sentiment values as entry and exit points leads 
 Text from 5000 tweets were tokenized, lemmatized, cleaned and processed.  
 A wordcloud and top 20 word bar chart were created.
 
+![wc.png](images/wc.png)
+
 ![BTC_WC_50days.png](images/BTC_WC_50days.png)
 
 ![20_top_words.png](images/20_top_words.png)
