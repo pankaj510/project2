@@ -57,6 +57,7 @@ Sentiment values over 0.13 indicated a buy signal, values between 0.03 and 0.13 
 Assumptions were made that every long/short signal was acted on.  
 If a short signal appeared when we were long, the trade would flip back to neutral then go short. The reverse is true.
 
+![entryexit.png](images/entryexit.png)
 Based on a hypothetical starting value of $1M, 3 short trades & 3 long trades were performed, leading to a final portfolio value of $1.547M.
 
 # Limitations
