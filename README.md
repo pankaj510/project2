@@ -4,8 +4,8 @@ Analysing Twitter sentiment to obtain trading signals
 Presented by: Shan Shan Zhang, Alisha Geary, James Sheridan & Kai Ooi
 
 # Motivation
-The year is 2021.
-Bitcoin (and cryptocurrency) is ubiquitous to all involved in the Fintech space.
+The year is 2021.  
+Bitcoin (and cryptocurrency) is ubiquitous to all involved in the Fintech space.  
 The premise of 'Will it survive?' has been replaced with 'To what extent can Bitcoin fluorish?' 
 Retail investors & Institutions have entered.
 Local governments are coming in with Miami looking at investing some of city's treasury reserves in Bitcoin. (1)
