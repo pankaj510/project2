@@ -9,9 +9,8 @@ Bitcoin (and cryptocurrency) is ubiquitous to all involved in the Fintech space.
 The premise of 'Will it survive?' has been replaced with 'To what extent can Bitcoin fluorish?'  
 Retail investors & Institutions have entered.  
 Local governments are coming in with Miami looking at investing some of city's treasury reserves in Bitcoin. (1)  
-Who will be the next? Which nation states will be first?  
-El Savador looks to be ahead in that race, with President Nayib Bukele planning to introduce legislation making it the world's first sovereign state to adop Bitcoin as legal tender. (2)
-Like it or not, Bitcoin and cryptocurrencies are here to stay.  
+El Savador President Nayib Bukele introduced a bill to adopt Bitcoin as legal tender and with 62 out of 84 possible votes, lawmakers voted in favor. (2)  
+Bitcoin and cryptocurrencies are here to stay.  
 What better way to get on the Bitcoin bandwagon, than to learn to potentially time one's entry.  
 We aim to come up with a guide on potential entry and exits for Bitcoin based on Twitter sentiment.
 
@@ -21,44 +20,44 @@ Twitter sentiment has a high correlation with Bitcoin prices, potentially guidin
 # Data Collection
 Twitter full archive search API (3) & 'Tweepy' python package (4) was used.  
 We collated the first 100 tweets per day, for 50 days, mentioning the term 'Bitcoin'.  
-Yahoo Finance API was used for historial Bitcoin prices. (5)
+Text from 5000 tweets were tokenized, lemmatized, cleaned and processed.  
+A wordcloud and top 20 word bar chart were created.  
+
+![wc.png](images/wc.png)  
+
+![BTC_WC_50days.png](images/BTC_WC_50days.png)  
+
+![20_top_words.png](images/20_top_words.png)  
+
+Yahoo Finance API was used for historial Bitcoin prices. (5)  
+
+TextBlob was a new library package we used to obtain subjectivity, polarity & sentiment.  
+Sentiment scores and raw text files were appended. (6)
 
 # Analysis
-TextBlob was a new library package we used to obtain subjectivity, polarity & sentiment.  
-Sentiment scores and raw text files were appended.
-
 Twitter Sentiment and Bitcoin price were overlayed.  
-Upon analysis, using a range of sentiment values as entry and exit points leads to very profitable signal generation.
 
-![BTC_sentiment.png](images/BTC_sentiment.png)
+![BTC_sentiment.png](images/BTC_sentiment.png)  
 
-Text from 5000 tweets were tokenized, lemmatized, cleaned and processed.  
-A wordcloud and top 20 word bar chart were created.
+Polarity & subjectivity were plotted, for a visual representation of Sentiment Analysis.  
 
-![wc.png](images/wc.png)
+![sentiment_analysis.png](images/sentiment_analysis.png)  
 
-![BTC_WC_50days.png](images/BTC_WC_50days.png)
+Piecharts and bargraphs were plotted as an adjunct visual representation representing positive, neutral and negative tweets.  
 
-![20_top_words.png](images/20_top_words.png)
+![piechart.png](images/piechart.png)    
 
-Polarity & subjectivity were plotted, for a visual representation of Sentiment Analysis.
-
-![sentiment_analysis.png](images/sentiment_analysis.png)
-
-Piecharts and bargraphs were plotted as an adjunct visual representation representing positive, neutral and negative tweets.
-
-![piechart.png](images/piechart.png)  
-
-![bargraph.png](images/bargraph.png)
+![bargraph.png](images/bargraph.png)  
 
 Algotrading was attempted.  
 We set arbitrary conditions for signal generation.  
 Sentiment values over 0.13 indicated a buy signal, values between 0.03 and 0.13 created no signal, and values less than 0.03 indicated a sell.  
 Assumptions were made that every long/short signal was acted on.  
-If a short signal appeared when we were long, the trade would flip back to neutral then go short. The reverse is true.
+If a short signal appeared when we were long, the trade would flip back to neutral then go short. The reverse is true.  
 
-![entryexit.png](images/entryexit.png)
+![entryexit.png](images/entryexit.png)  
 
+Upon analysis, using a range of sentiment values as entry and exit points leads to very profitable signal generation.
 Based on a hypothetical starting value of $1M, 3 short trades & 3 long trades were performed, leading to a final portfolio value of $1.547M.
 
 # Limitations
@@ -86,7 +85,8 @@ Using specific Twitter sentiment values as a guideline, signals for going long o
 
 # Links
 1. https://news.bitcoin.com/mayor-miami-treasury-reserves-bitcoin/
-2. https://www.cnbc.com/amp/2021/06/05/el-salvador-becomes-the-first-country-to-adopt-bitcoin-as-legal-tender-.html
+2. https://www.reuters.com/world/americas/el-salvador-approves-first-law-bitcoin-legal-tender-2021-06-09/
 3. https://developer.twitter.com/en/dashboard
 4. https://docs.tweepy.org/en/latest/index.html
 5. https://pypi.org/project/yfinance/
+6. https://textblob.readthedocs.io/en/dev/
